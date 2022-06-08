@@ -3,7 +3,7 @@ const movies = require("../models/movies.json");
 // criar funções que controlam as informações, recebendo as requisições e enviando as respostas
 
 const home = (req, res) => {
-
+    res.status(200).send()
 };
 
 // visualizar todos os filmes

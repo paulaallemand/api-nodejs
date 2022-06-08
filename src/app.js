@@ -6,6 +6,6 @@ app.use(cors());
 
 app.use(express.json());
 
-// importar as rotas
+app.use("/movies", movies);
 
 module.exports = app;
