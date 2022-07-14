@@ -4,9 +4,16 @@ const movies = require("../models/movies.json");
 
 // visualizar todos os filmes
 
+const getAll = (req, res) => {
+    console.log("REQUISIÇÃO", req);
+    console.log("RESPOSTA", res);
+
+    res.status(200).send(movies);
+};
+
 // consumir lista de filmes de api terceira utilizando fetch
 
 
 module.exports = {
-    home
+    getAll
 };
